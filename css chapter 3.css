@@ -1,0 +1,83 @@
+
+*{
+    background-color: rgb(166, 156, 156);
+}
+div{
+    border-radius: 40px;
+    text-align: center;
+    height: 150px;
+    width: 500px;
+    background-color: lightpink;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-left: 33%;
+    margin-bottom: 10px;
+    transition: 1s;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+h1{
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-width: 5px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 30px;
+    border-left-color: red;
+    border-right-color: blue;
+    border-bottom-color: green;
+    border-top-color: purple;
+    margin-left: 33%;
+    margin-right: 30%;
+    
+}
+button{
+    border-radius: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 238px;
+     display: block;
+    margin: 0 auto;
+}
+h2{
+    display : inline
+}
+span{
+    display : block
+}
+
+.display{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: lightpink;
+    border-radius: 20px;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-bottom-right-radius: 0%;
+    transition: 1s;
+    transition-delay: 1.5;
+    transition: margin-top 2s ease-in 0.2s;
+}
+div:hover{
+    background-color: azure;
+    height: 170px;
+    width: 520px;
+}
+.display:hover{
+    margin-top: 500px;
+    background-color: azure;
+    height: 170px;
+    width: 520px;
+    border-radius: 100%;
+}
+

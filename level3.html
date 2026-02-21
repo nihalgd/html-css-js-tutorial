@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGMA LEVEL 3</title>
+    </head>
+    <body>
+        <h2><u><center>Welcome to SIGMA LEVEL 3</center></u></h2>
+
+        <table border = "1"> 
+            <caption><i>Student Information</i></caption>
+            <thead>
+                <tr> 
+                    <th rowspan="2">Name</th>
+                    <th rowspan="2">Enrollment Number</th>
+                    <th rowspan="2">Department</th>
+                    <th rowspan="2">Year</th>
+                    <th colspan="2">Gender</th>
+                </tr>
+                <tr>
+                    <th>Male</th>
+                    <th>Female</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nidhi Malviya</td>
+                    <td>0875CS231079</td>
+                    <td>CSE</td>
+                    <td>3rd Year</td>
+                    <td>&#x2716;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Nihal Goud</td>
+                    <td>0875CS231080</td>
+                    <td>AIML</td>
+                    <td>3rd Year</td>
+                    <td>&check;</td>   
+                    <td>&#x2716;</td>    
+                </tr>
+                <tr>
+                    <td>Nikhil Malviya</td>
+                    <td>0875CS231081</td>    
+                    <td>EC</td>
+                    <td>3rd Year</td>
+                    <td>&check;</td>
+                    <td>&#x2716;</td> 
+                </tr>
+                 <tr>
+                    <td>Aryan Patil</td>
+                    <td>0875CS231033</td>
+                    <td>CE</td>
+                    <td>3rd Year</td>
+                    <td>&check;</td>
+                    <td>&#x2716;</td> 
+                </tr>
+                <tr>
+                    <td>Ankit Rathore</td>
+                    <td>0875CS231022</td>
+                    <td>ME</td>
+                    <td>3rd Year</td>  
+                    <td>&check;</td>
+                    <td>&#x2716;</td>      
+                </tr>
+            </tbody>
+
+
+            <table border = "1">
+                <caption><i>A test table with Merge cell</i></caption>
+                <tbody>
+                    <tr>
+                        <td colspan="1" rowspan="2"></td>
+                        <td colspan="2" rowspan="1">Average</td>
+                        <td colspan="2" rowspan="2">Red eyes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Height</td>
+                        <td>Weight</td>
+                    </tr>
+
+                    <tr>
+                        <td>Males</td>
+                        <td>1.9</td>
+                        <td>0.003</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>1.7</td>
+                        <td>0.002</td>
+                        <td>43%</td>
+                    </tr>
+                </tbody>
+        </table>
+     <form action=/portfolio.html>
+        <h1>
+            <u>
+                <strong>
+                        STUDENT REGISTRATION FORM
+                </strong>
+            </u>
+        </h1>
+
+        <div>
+            <label>    
+                <strong>Name</strong>
+                <br>
+                <input type="text" placeholder="Enter your name" name="studentName">
+                </label>
+        </div>
+
+        <div>
+            <label>
+                <strong>Age</strong>
+                <br>
+                <input type="number" placeholder="Enter your Age" name="age">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <strong>Student Email</strong>
+                <br>
+                <input type="email" placeholder="Enter your email" name="email">
+            </label>
+        </div>
+        
+         <div>
+            <label>
+                <strong>Password</strong>
+                <br>
+                <input type="password" placeholder="Enter your password" name="password">
+        </label>
+
+        <div>
+            <label>
+                <strong>Gender</strong>
+                <br>    
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="  gender" value="female"> 
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="other">
+                <label for="other">Other</label>        
+            </label>
+        </div>
+
+        <div>
+            <select name="course">
+                <option value="">Select a course</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="information_technology">Information Technology</option>
+                <option value="electronics">Electronics</option>
+                <option value="mechanical">Mechanical</option>
+        </div>
+
+        <input type="checkbox"> I agree to the terms and conditions <br>
+        <input type="reset" value="Reset">
+        <button> Submit </button>
+        <input type="submit" value="Submit Form">
+     </form>
+     <hr>
+     
+        <form action="https://www.youtube.com/results">
+            <label>
+                <strong>
+                      You can search anything on youtube from here
+                </strong>
+                <br>
+                <input type="text" placeholder="Search on youtube" name="search_query">
+            </label>
+            <button>Search on YouTube</button>
+        </form>
+        <hr>
+
+        <form action = "https://www.google.com/search">
+                <label>
+                    <strong>
+                        You can search anything on google from here
+                    </strong>
+                    <br>
+            <input type = "text" name = "q" placeholder = "search on google">
+            <button>Search on Google</button>
+        </form>
+        <hr>
+
+
+        <h3><strong>Registration Form<h3></strong>
+            <form action="/action">
+
+                <div>
+                    <input type = "text" placeholder = "First Name">
+                    <input type = "text" placeholder = "Last Name">
+                    <br>
+                </div>
+
+                <div>
+                    <label>Please select your gender</label>
+                        <select name = "gender" id = "gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <br>
+                </div>
+
+                <div>
+                    <label>
+                        Do you agree to all terms of service?
+                    </label>
+                    <input type = "checkbox" name = "terms" value = "agree">
+                    <label for = "terms">Yes, I agree</label>
+                    <br>
+                </div>
+
+                <button>Register</button>
+            </form>
+    </body>
+</html>
