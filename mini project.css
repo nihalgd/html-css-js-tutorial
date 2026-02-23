@@ -1,3 +1,114 @@
-h1{
-    color: pink;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32")
+    no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Hide checkbox */
+#check {
+    display: none;
+}
+
+/* Menu button */
+.menu_btn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    transition: 0.4s ease;
+    padding-top: 20px;
+}
+
+/* Slide effect */
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.close_btn {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.menu li {
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.menu li i {
+    color: white;
+    width: 30px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Social icons */
+.social {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.social a {
+    color: white;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #ff9800;
+}
+
+#check:checked ~ .menu_btn {
+    display: none;
 }
