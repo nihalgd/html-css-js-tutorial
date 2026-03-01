@@ -117,15 +117,58 @@
 
 //LOOP!
 
-for(i=1; i<=5; i++){
-    console.log(i)
-} 
-for(let i=1; i<=15; i=i+2){
-    console.log(i)
-} 
-for(i=0; i<=10; i=i+2){
-    console.log(i)
-} 
-for(i=5; i<=50; i=i+5){
-    console.log(i)
-} 
+// for(i=1; i<=5; i++){
+//     console.log(i)
+// } 
+// for(let i=1; i<=15; i=i+2){
+//     console.log(i)
+// } 
+// for(i=0; i<=10; i=i+2){
+//     console.log(i)
+// } 
+// for(i=5; i<=50; i=i+5){
+//     console.log(i)
+// } 
+
+// let i = 5;
+// while(i>=1){
+// console.log(i);
+// i--;
+// }
+
+// let i=1;
+// while(1<=10){
+//     if(i == 8){
+//         break;
+//     }
+//     console.log(i)
+//     i++;
+// }
+
+// LOOPS WITH ARRAYS!
+
+// let fruits = ["mango","papaya","banana",'apple',"orangae"]
+// for(let i=0; i<fruits.length; i++){
+//     console.log(i, fruits[i]);
+// }
+
+// let fruit = ["mango","papaya","banana",'apple',"orangae"]
+// for(i of fruit){
+//     console.log(i);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
