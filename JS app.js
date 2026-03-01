@@ -111,3 +111,21 @@
 
 // let user = "NIHAL GOUD";
 // console.log(user.slice(0,5));
+
+// let students1 = ["nihal","nikhil","niharika"];
+// let students2 = ["nihal","nikhil","niharika"];
+
+//LOOP!
+
+for(i=1; i<=5; i++){
+    console.log(i)
+} 
+for(let i=1; i<=15; i=i+2){
+    console.log(i)
+} 
+for(i=0; i<=10; i=i+2){
+    console.log(i)
+} 
+for(i=5; i<=50; i=i+5){
+    console.log(i)
+} 
