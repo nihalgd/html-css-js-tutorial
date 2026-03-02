@@ -1,5 +1,7 @@
-function add (g1,g2){
-    console.log(g1+g2)
+function abcd(val){
+    val();
 }
-add(33,22);
-add(456,49);
+abcd(function(){
+    console.log("heyy")
+
+});

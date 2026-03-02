@@ -90,3 +90,22 @@ function add (g1,g2){
 }
 add(33,22);
 add(456,49);
+
+function abcd(...val){    // rest operator
+   console.log(...val)
+}
+abcd(1,2,3,4,5,6,7,8,9,10);
+
+function abcd(){          // return operator
+    return 69;
+}
+let val = abcd();
+console.log(val);
+
+function abcd(val){       // first class function
+    val();
+}
+abcd(function(){
+    console.log("heyy")
+
+});
