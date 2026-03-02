@@ -109,3 +109,51 @@ abcd(function(){
     console.log("heyy")
 
 });
+
+function abcd(){          // higher order function
+    return function () {
+        console.log("heyheyheyhey");
+    };
+}
+abcd()();
+
+let a = 69;                   // pure function
+function abcd(){
+    console.log(a);
+}
+abcd();
+
+function abcd(){             // impure function
+    a++;
+}
+abcd();
+
+function abcd(){           // closure function
+    let a=12;
+    return function(){
+        console.log(a);
+    }
+}
+abcd()();
+
+function abcd(){         // lexical spocing
+    let a = 10;
+    function defg(){
+        let b = 20;
+        // console.log(a);
+        function hijk(){
+            // console.log(b);
+        }
+        // return hijk;
+    }
+    // return defg;
+}
+
+(function(){              // IIFE Function
+    console.log("huihuihiui")
+})();
+
+abcd();                   // hoisting functions
+function abcd(){
+    console.log("huuiihuiii");
+}
