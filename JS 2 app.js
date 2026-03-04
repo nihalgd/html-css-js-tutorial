@@ -162,7 +162,87 @@ function abcd(){
 
 // ARRAYS!
 
-let marks = [10,20,30,40,50,60,70,80,90,100];
-marks[9]=1000;
-console.log(marks);
+    let marks = [10,20,30,40,50,60,70,80,90,100];
+    marks[9]=1000;
+    console.log(marks);
+
+    marks = [10,20,30,40,50,60,70,80,90,100];
+    marks.push(2000);
+    console.log(marks);
+
+    marks = [10,20,30,40,50,60,70,80,90,100];
+    marks.pop(100);
+    console.log(marks);
+
+    marks = [10,20,30,40,50,60,70,80,90,100];
+    marks.shift();
+    console.log(marks);
+
+    marks = [10,20,30,40,50,60,70,80,90,100];
+    marks.unshift(0);
+    console.log(marks);
+
+    marks = [10,20,30,40,50,60,70,80,90,100];
+    marks.splice(2,2)
+    console.log(marks);
+
+    marks = [10,20,30,40,50,60,70,80,90,100];
+    newmark = marks.slice(0,5);
+    console.log(marks);
+    console.log(newmark);
+
+
+   marks = [10,20,30,40,50,60,70,80,90,100];
+   marks.reverse();
+   console.log(marks);
+
+   marks = [0,456,49,46,46,4,79,1,6,8,1,78,5,];
+   marks = marks.sort(function(a,b){
+    return(a-b);
+   });
+//    marks.sort();
+   console.log(marks);
+
+   marks = [10,20,30,40,50,60,70,80,90,100];    // for each
+   marks = marks.forEach(function(val){
+    console.log(val+100);
+   });
+
+   marks = [10,20,30,40,50,60,70,80,90,100];     // map function
+   let newmark = marks.map(function(val){
+    return 12;
+   });
+   console.log(newmark)
+
+   marks = [10,20,30,40,50,60,70,80,90,100];     // filter function
+   let newmarks = marks.filter(function(val){
+    if(val>50)
+    return true;
+   });
+   console.log(newmarks)
+
+   marks = [10,20,30,40,50,60,70,80,90,100];    // reduce
+   marks = marks.reduce(function(accumalator,value ){
+    return accumalator + value ;
+   },0);
+   console.log(marks)
+
+   marks = [10,20,30,40,50,60,70,80,90,100];    // find
+   marks = marks.find(function(val){
+    return val === 20;
+   });
+   console.log(marks)
+
+   marks = [10,20,30,40,50,60,70,80,90,100];    // some
+   markss = marks.some(function(val){
+    return val > 85;
+   });
+   console.log(markss)
+
+   marks = [10,20,30,40,50,60,70,80,90,100];    // every
+   let markss = marks.every(function(val){
+    return val > 50;
+   });
+   console.log(markss)
+
 
