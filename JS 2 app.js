@@ -290,3 +290,8 @@ function abcd(){
 // OBJECTS!
 
 
+let obj = {
+    name : "nihal",  
+    age  : 20,
+};
+console.log(obj.age);
