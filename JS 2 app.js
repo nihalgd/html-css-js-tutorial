@@ -245,4 +245,48 @@ function abcd(){
    });
    console.log(markss)
 
+    marks = [10,20,30,40,50,60,70,80,90,100];    //de-structuring 
+    [a,b] = marks;
+    console.log(b)
+
+    marks = [10,20,30,40,50,60,70,80,90,100];   //spread-operator
+    marks1 = [...marks];
+    console.log(marks)
+
+    //PRACTICE QUESTIONS
+    // let fruits = ["papaya","orange","banana"]
+    // fruits [2] = ("Kiwi")
+    // fruits.push("Mango")
+    // fruits.unshift("pineapple")
+    // console.log(fruits);
+
+    // color= ["green" , "yellow"];
+    // color.splice(1,0,"red","blue");
+    // console.log(color)
+
+    // arr = [1,2,3,4,5,6]
+    // arrays = arr.slice(1,4)
+    // console.log(arrays)
+
+    // naam = ["nihal" , "gourav" , "lucky" , "aryan" , "zebra"]
+    // nam = naam.sort().reverse();
+    // console.log(nam);
+   
+    // square = [2,3,4,5,6];
+    // sq = square.map(function(val){
+    //     return val*2;
+    // })
+    // console.log(sq);
+
+    // no = [5,8,10,12,15,20]
+    // num = no.filter((val)=>{
+    //     return val>10;
+    // })
+    // console.log(num);
+
+    
+// - - - - - - - - - - - - - // - - - - - - - - - - - - - // - - - - - - - - - - - - - // - - - - - - - - - - - - - // - - - - - - - - - - - - - // - - - - - - - - - - - - - //
+
+// OBJECTS!
+
 
