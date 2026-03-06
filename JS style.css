@@ -4,3 +4,23 @@
 div{
    color: rgb(170, 255, 1); 
 }
+
+/* body{
+    text-align: center;
+    font-family: serif;
+}
+
+button{
+    margin-top: 20px;
+    padding: 8px 15px;
+}
+
+div{
+    height: 150px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
