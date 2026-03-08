@@ -161,9 +161,9 @@ let ul = document.querySelector("ul")
 
 button.addEventListener("click" , function(){
     let item = document.createElement("li");
-    item.innerText =input.value;
-
-
+    item.innerText = input.value;
     console.log(input.value);
+    ul.appendChild(item);
     input.value = "";
+    
 })
