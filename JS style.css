@@ -1,9 +1,16 @@
 *{
-    background-color: rgb(40, 36, 36);
+    background-color: rgb(195, 172, 172);
 }
-div{
-   color: rgb(170, 255, 1); 
+
+/* div{
+    background-color: aliceblue;
+    color: rgb(170, 255, 1); 
+    border: 2px solid black;
 }
+li{
+    color: aqua;
+    background-color: black;
+} */
 
 /* body{
     text-align: center;

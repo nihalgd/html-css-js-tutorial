@@ -87,3 +87,83 @@
 //     return color;
 // }
 // // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// // EVENT - - - - - - - - EVENT - - - - - - - - - - - - - EVENT - - - - - - - - - - - - - - - - - - - - - - - 
+
+// let p = document.querySelector("p");
+
+// p.addEventListener("click", function (){
+//     console.log("click")
+// });
+
+// let div = document.querySelector("div");
+
+// div.addEventListener("mouseenter" , function(){
+//      console.log("huiiiiiii")
+// } )
+
+// let btn = document.querySelector("button");
+// btn.addEventListener("click" , function(){
+//     console.log(this.innerText);
+//     this.style.backgroundColor = "blue";
+// })
+
+// let btn = document.querySelector("button");
+
+// btn.addEventListener("click" , function(event){
+//     console.log(event);
+    
+// })
+// btn.addEventListener("dblclick" , function(event){
+//     console.log(event);
+    
+// })
+// let input = document.querySelector("input");
+// input = addEventListener("keyup" , function(event){
+//     // console.log(event);
+//     console.log("presssedd");
+// })
+
+// let form = document.querySelector("form");
+
+// form.addEventListener("submit" , function(event){
+//     event.preventDefault();
+//     // console.dir(form);
+//     // console.log("form submit")
+
+//     let username = document.querySelector("#username");
+//     let password = document.querySelector("#password");
+
+
+//     console.log(username.value);
+//     console.log(password.value);
+
+    
+// });
+
+// // EVENT BUBBLING - - - - - - - - EVENT BUBBLING  - - - - - - - - - - - - - EVENT BUBBLING - - - - - - - - - - - - - - - - - - - - - - - 
+
+// let div = document.querySelector("div");
+// let ul = document.querySelector("ul");
+// let list = document.querySelector("li");
+
+
+// div.addEventListener("click" , function(){
+//     console.log("div was clicked");
+// });
+// ul.addEventListener("click" , function(event){
+//     console.log("ul was clicked");
+//     event.stopPropagation();
+// });
+
+let input = document.querySelector("input");
+let button = document.querySelector("button");
+let ul = document.querySelector("ul")
+
+button.addEventListener("click" , function(){
+    let item = document.createElement("li");
+    item.innerText =input.value;
+
+
+    console.log(input.value);
+    input.value = "";
+})
