@@ -155,15 +155,18 @@
 //     event.stopPropagation();
 // });
 
-let input = document.querySelector("input");
-let button = document.querySelector("button");
-let ul = document.querySelector("ul")
+// let input = document.querySelector("input");
+// let button = document.querySelector("button");
+// let ul = document.querySelector("ul")
 
-button.addEventListener("click" , function(){
-    let item = document.createElement("li");
-    item.innerText = input.value;
-    console.log(input.value);
-    ul.appendChild(item);
-    input.value = "";
+// button.addEventListener("click" , function(){
+//     let item = document.createElement("li");
+//     item.innerText = input.value;
+//     console.log(input.value);
+//     ul.appendChild(item);
+//     input.value = "";
     
-})
+// })
+
+
+ 
