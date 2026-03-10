@@ -334,5 +334,3 @@ Object.entries(det);
 
 
 
-
-
