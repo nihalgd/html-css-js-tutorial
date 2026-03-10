@@ -15,30 +15,30 @@ localStorage.setItem("friends", JSON.stringify(["nihal" , "gourav" , "aryan"]))
 
 // window.matchMedia('(prefers-color-scheme: dark)')
 
-function setDarkOrLight() {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-    } else {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-    }
-}
+// function setDarkOrLight() {
+//     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//         document.body.classList.add("dark");
+//         document.body.classList.remove("light");
+//     } else {
+//         document.body.classList.add("light");
+//         document.body.classList.remove("dark");
+//     }
+// }
 
-setDarkOrLight();
+// setDarkOrLight();
 
 
-let btn = document.querySelector("button");
+// let btn = document.querySelector("button");
 
-btn.addEventListener("click", function () {
-    if (document.body.classList.contains("dark")) {
-        document.body.classList.remove("dark");
-        document.body.classList.add("light");
-    } else {
-        document.body.classList.remove("light");
-        document.body.classList.add("dark");
-    }
-});
+// btn.addEventListener("click", function () {
+//     if (document.body.classList.contains("dark")) {
+//         document.body.classList.remove("dark");
+//         document.body.classList.add("light");
+//     } else {
+//         document.body.classList.remove("light");
+//         document.body.classList.add("dark");
+//     }
+// });
 
 // CALLBACK HELL
 
@@ -108,9 +108,46 @@ btn.addEventListener("click", function () {
 //      console.log("promise was rejected");
 // });
 
-// SYNC - ASYNC
+// ASYNC - - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -
+
+// async  function greet (){
+//     // throw "weak connection";
+//     return "hello!";
+// }
+
+// greet()
+// .then((result) => {
+//     console.log("promise was resolved");
+//     console.log("result was" , result);
+// })
+// .catch((err) => {
+//     console.log("promise was rejected");
+//     console.log("result was" , err);
+// });
 
 
+// let demo = async () =>{
+//     return "helllowwwiiiuuu!";
+// }
 
+// AWait keyword - - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -
 
+function getNum(){
+    return new Promise((resolve , reject) => {
+        setTimeout(() => {
+            let num = Math.floor(Math.random()*10)
+            console.log(num);
+            resolve();
+        } ,1000);
+    })
+}
 
+async function demos() {
+    await getNum();
+     await getNum();
+      await getNum();
+       await getNum();
+        await getNum();
+         await getNum();
+          await getNum();
+}
