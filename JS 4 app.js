@@ -89,21 +89,28 @@ btn.addEventListener("click", function () {
 // PROMISES
 // RESOLVE & REEJCT
 
-function savetoDb (data){
-    return new Promise((success , failure) => {
-         let internetSpeed = Math.floor(Math.random()*10) + 1;
-         if(internetSpeed > 4){
-            success("data was saved");
-         }else{
-            failure("weak connection");
-         }
-    });
-}
+// function savetoDb (data){
+//     return new Promise((success , failure) => {
+//          let internetSpeed = Math.floor(Math.random()*10) + 1;
+//          if(internetSpeed > 4){
+//             success("data was saved");
+//          }else{
+//             failure("weak connection");
+//          }
+//     });
+// }
 
-savetoDb("NIHAL GOUD");
+// savetoDb("NIHAL GOUD")
+// .then(() => {
+//     console.log("promise was resolved");
+// })
+// .catch(() => {
+//      console.log("promise was rejected");
+// });
+
+// SYNC - ASYNC
 
 
-   
 
 
 
