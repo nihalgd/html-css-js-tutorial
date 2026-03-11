@@ -132,22 +132,31 @@ localStorage.setItem("friends", JSON.stringify(["nihal" , "gourav" , "aryan"]))
 
 // AWait keyword - - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -
 
-function getNum(){
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            let num = Math.floor(Math.random()*10)
-            console.log(num);
-            resolve();
-        } ,1000);
-    })
-}
+// function getNum(){
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             let num = Math.floor(Math.random()*10)
+//             console.log(num);
+//             resolve();
+//         } ,1000);
+//     })
+// }
 
-async function demos() {
-    await getNum();
-     await getNum();
-      await getNum();
-       await getNum();
-        await getNum();
-         await getNum();
-          await getNum();
+// async function demos() {
+//     await getNum();
+//      await getNum();
+//       await getNum();
+//        await getNum();
+//         await getNum();
+//          await getNum();
+//           await getNum();
+// }
+
+// API REQUEST - - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -- - - - - - - - - - -
+
+let url = "https://catfact.ninja/fact";
+
+async function getFacts(){
+    let res = await fetch(url);
+    console.log(res);
 }
